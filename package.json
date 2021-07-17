@@ -1,0 +1,26 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "我的博客",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "start": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuchuan99/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuchuan99/docs/issues"
+  },
+  "homepage": "https://github.com/wuchuan99/docs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "vuepress": "^1.8.2"
+  }
+}
