@@ -1,4 +1,17 @@
+const moment = require('moment');
+moment.locale('zh-cn')
+
 module.exports = {
+    plugins: [
+        [
+          '@vuepress/last-updated',
+          {
+            transformer: timestamp => {
+              return moment(timestamp).format('LLLL')
+            }
+          }
+        ]
+    ],
     themeConfig: {
         lastUpdated: '更新时间',
         logo: '/assets/img/logo.png',
