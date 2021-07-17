@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "start": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev docs"
+    "start": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev docs",
+    "deploy": "bash deploy.sh"
   },
   "repository": {
     "type": "git",
