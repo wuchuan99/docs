@@ -14,9 +14,9 @@ module.exports = [
   [
     "dynamic-title",
     {
-      showIcon: "/favicon.ico",
+      showIcon: "/docs/favicon.ico",
       showText: "(*╹▽╹*)欢迎回来：",
-      hideIcon: "/cursor.ico",
+      hideIcon: "/docs/cursor.ico",
       hideText: "浏览器即将爆炸，快回来",
       recoverTime: 2000
     }
@@ -27,7 +27,7 @@ module.exports = [
   //     server: "netease",
   //     type: "playlist",
   //     mid: "523342770", // 我喜欢的歌单
-  //   },          
+  //   },
   //   // 不配置该项的话不会出现全局播放器
   //   aplayer: {
   //     // 吸底模式
