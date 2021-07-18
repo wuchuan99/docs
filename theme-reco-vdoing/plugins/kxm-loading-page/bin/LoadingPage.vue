@@ -19,7 +19,7 @@
   width 100vw
   background white
   text-align center
-  cursor url(/cursor.ico), auto !important
+  cursor url(/docs/cursor.ico), auto !important
   &::after
     content ""
     display inline-block
