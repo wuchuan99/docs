@@ -333,8 +333,8 @@
             <pre
               data-id="code-animation"
             ><code class="hljs" data-trim data-line-numbers>
-              const connection = navigator.connection 
-                              || navigator.mozConnection 
+              const connection = navigator.connection
+                              || navigator.mozConnection
                               || navigator.webkitConnection;
               function changedStatus() {
                 type = connection.effectiveType;
@@ -348,7 +348,7 @@
             <pre
               data-id="code-animation"
             ><code class="hljs" data-trim data-line-numbers>
-              window.addEventListener('DOMContentLoaded', 
+              window.addEventListener('DOMContentLoaded',
               (event) => {
                 let time = performance.getEntriesByType('navigation')[0]
                 console.log(time.domInteractive);
@@ -401,7 +401,7 @@
               const update = (timestamp) => {
                 for (let i = 0; i < cards.length; i++) {
                   let top = cards[i].offsetTop;
-                  cards[i].style.width = ((Math.sin(cards[i].offsetTop 
+                  cards[i].style.width = ((Math.sin(cards[i].offsetTop
                   + timestamp / 100 + 1) * 500) + 'px')
                 }
                 window.requestAnimationFrame(update)
@@ -424,7 +424,7 @@
                     fastdom.measure(() => {
                       let top = cards[i].offsetTop;
                       fastdom.mutate(() => {
-                        cards[i].style.width = Math.sin(top 
+                        cards[i].style.width = Math.sin(top
                         + timestamp / 100 + 1) * 500 + "px";
                       });
                     });
@@ -779,7 +779,7 @@
                   new RegExp('/[^/?]+\\.[^/]+$'),
               ],
             }),
-            
+
             new ManifestPlugin({
                 fileName: 'asset-manifest.json',
                 publicPath: paths.publicUrlOrPath,
@@ -792,7 +792,7 @@
                     const entrypointFiles = entrypoints.app.filter(
                         fileName => !fileName.endsWith('.map')
                     );
-            
+
                     return {
                         files: manifestFiles,
                         entrypoints: entrypointFiles,
@@ -964,8 +964,8 @@
               >
             </li>
             <li>
-              <a href="https://alexwjj.github.io/" target="_blank"
-                >个人博客: https://alexwjj.github.io</a
+              <a href="https://wuchuan99.github.io/docs//" target="_blank"
+                >个人博客: https://wuchuan99.github.io/docs/</a
               >
             </li>
           </ul>
@@ -1015,7 +1015,7 @@
         $loadding.style.display = 'none';
         $loadding.parentNode.removeChild($loadding);
       }
-      
+
       window.addEventListener('load', removeLoading);
     </script>
   </body>

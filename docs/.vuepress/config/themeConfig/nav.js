@@ -1,8 +1,8 @@
 // nav
 module.exports = [
   { text: '首页', link: '/', icon: 'reco-home' },
-  { 
-    text: '前端', 
+  {
+    text: '前端',
     link: '',
     icon: '',
     items: [
@@ -26,7 +26,7 @@ module.exports = [
       }
     ]
   },
-  
+
   {
     text: '索引',
     icon: 'reco-api',
@@ -51,8 +51,8 @@ module.exports = [
       },{
         text: '博客',
         items: [
-          { text: '本站源码', link: 'https://github.com/alexwjj/alexwjj.github.io', icon: 'reco-document' },
-          { text: '老版博客', link: 'https://alexwjj.github.io/old-blog', icon: 'reco-document' },
+          { text: '本站源码', link: 'https://github.com/wuchuan99/docs', icon: 'reco-document' },
+          { text: '老版博客', link: 'https://wuchuan99.github.io/docs//old-blog', icon: 'reco-document' },
         ]
       },{
         text: '其他',

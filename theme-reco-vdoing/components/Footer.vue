@@ -3,7 +3,7 @@
   <div class="footer-wrapper">
     <span class="footer-reco-theme">
       <reco-icon icon="reco-github" />
-      <a target="blank" href="https://github.com/alexwjj/alexwjj.github.io">alexwjj.github.io@5.0</a>
+      <a target="blank" href="https://github.com/wuchuan99/docs">wuchuan99.github.io/docs/@5.0</a>
     </span>
     <span v-if="$themeConfig.record">
       <reco-icon icon="reco-beian" />
@@ -58,7 +58,7 @@ export default({
   border-top 1px solid var(--border-color)
   text-align center
   color $accentColor
-  a 
+  a
     font-size 14px
     color $accentColor
     &.ml5

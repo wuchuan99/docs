@@ -1,5 +1,5 @@
 ---
 home: true
-heroText: 川的学习基地
+heroText: 无妄子的学习基地
 heroImage: /img/logo.png
 ---

@@ -4,7 +4,7 @@
       <div class="home-blog-hero">
         <ModuleTransition delay=".06">
           <img v-if="recoShowModule && $frontmatter.heroImage"
-            class="hero-img" alt="俊劫的学习基地"
+            class="hero-img" alt="无妄子的学习基地"
             :src="$withBase($frontmatter.heroImage)"
           />
         </ModuleTransition>
@@ -115,17 +115,17 @@ import { getOneColor } from '@theme/helpers/other'
 import ParticleClock from '@theme/lib/particle-clock'
 
 export default {
-  components: { 
+  components: {
     NoteAbstract,
-    FriendLink, 
-    MainLayout, 
+    FriendLink,
+    MainLayout,
     PostList,
     CategoriesBar,
     TagsBar,
     Pagination,
-    ModuleTransition, 
-    PersonalInfo, 
-    RecoIcon 
+    ModuleTransition,
+    PersonalInfo,
+    RecoIcon
   },
   data () {
     return {
@@ -174,7 +174,7 @@ export default {
       }
     },
     // 没有分页参数 p 隐藏banner栏
-    showBanner () { 
+    showBanner () {
       return this.$route.query.p
         && (!this.homeData.postList || this.homeData.postList === 'detailed')
         ? false : true
@@ -317,11 +317,11 @@ export default {
     width 100% !important
     height calc(100vh - 3.6rem) !important
     z-index -3
-    animation background-size-animation 6s ease-out 0s 1 
+    animation background-size-animation 6s ease-out 0s 1
     background-repeat no-repeat
     background-position center center
     background-size cover
-    
+
 #home-blog-wrapper-totop
   position absolute
   bottom 3.4rem
@@ -357,7 +357,7 @@ export default {
       color #fff
       &:hover
         box-shadow var(--box-shadow-hover)
-      i 
+      i
         color #fff
 
 // 分页不在第一页时，隐藏banner栏
@@ -377,13 +377,13 @@ export default {
       span
         &.title
           font-weight 600
-          i 
+          i
             color var(--text-color-sub)
             &.reco-tag
               font-size .95rem
             &.reco-friend
               font-size .9rem
-        &.num 
+        &.num
           color #fff
           border-radius $borderRadius
           padding 0 0.2rem
