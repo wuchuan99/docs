@@ -1,33 +1,17 @@
-const moment = require('moment');
-moment.locale('zh-cn')
+const head = require('./config/head.js');
+const plugins = require('./config/plugins.js');
+const themeConfig = require('./config/themeConfig.js');
 
 module.exports = {
-  base: '/docs/',
-  plugins: [
-      [
-        '@vuepress/last-updated',
-        {
-          transformer: timestamp => {
-            return moment(timestamp).format('LLLL')
-          }
-        }
-      ]
-  ],
-  themeConfig: {
-      lastUpdated: '更新时间',
-      logo: '/assets/img/logo.png',
-      nav: [
-          { text: 'Home', link: '/' },
-          { text: 'Guide', link: '/about/' },
-          { text: 'External', link: 'https://google.com' },
-          {
-              text: 'Languages',
-              ariaLabel: 'Language Menu',
-              items: [
-                { text: 'Chinese', link: '/language/chinese/' },
-                { text: 'Japanese', link: '/language/japanese/' }
-              ]
-            }
-      ]
-  }
+  title: "川的学习基地",
+  base: '/docs/', // 格式：'/<部署仓库名>/'， 默认'/'
+  description: "川的学习基地是川的个人博客，用于记录学习笔记、分享音乐、书籍、旅行等个人兴趣的站点。",
+  dest: "public",
+  theme: require.resolve('../../theme-reco-vdoing'), // 使用本地主题
+  markdown: {
+    lineNumbers: true // 代码行号
+  },
+  head,
+  plugins,
+  themeConfig
 }
