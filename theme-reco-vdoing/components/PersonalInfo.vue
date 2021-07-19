@@ -10,7 +10,7 @@
   </div>
   <div class="personal-info-details">
     <div>文章：<span>{{pageNums}}</span></div>
-    <div>地点：<span>杭州·西湖</span></div>
+    <div>地点：<span>武汉·光谷</span></div>
   </div>
   <div class="slogan" v-if="$themeConfig.slogan">
     {{$themeConfig.slogan}}
@@ -61,7 +61,7 @@ export default defineComponent({
     font-size .8rem
     text-align center
     color var(--text-color-sub)
-  .personal-info-details 
+  .personal-info-details
     display flex
     justify-content center
     margin-top 5px

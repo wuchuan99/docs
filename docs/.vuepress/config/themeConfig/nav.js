@@ -36,7 +36,7 @@ module.exports = [
       { text: '归档', link: '/archives/', icon: 'reco-date' },
     ]
   },
-  { text: '留言板', link: '/bookshop/message-board/', icon: 'reco-suggestion' },
+  // { text: '留言板', link: '/bookshop/message-board/', icon: 'reco-suggestion' },
   { text: '资源导航', link: '/web/docs/nav/', icon: 'reco-api' },
   {
     text: '关于',
@@ -45,21 +45,22 @@ module.exports = [
       {
         text: '联系',
         items: [
-          { text: 'GitHub', link: 'https://github.com/alexwjj', icon: 'reco-github' },
-          { text: '关于我', link: '/bookshop/linkme/', icon: 'reco-account' },
+          { text: 'GitHub', link: 'https://github.com/wuchuan99', icon: 'reco-github' },
+          // { text: '关于我', link: '/bookshop/linkme/', icon: 'reco-account' },
         ]
       },{
         text: '博客',
         items: [
           { text: '本站源码', link: 'https://github.com/wuchuan99/docs', icon: 'reco-document' },
-          { text: '老版博客', link: 'https://wuchuan99.github.io/docs//old-blog', icon: 'reco-document' },
-        ]
-      },{
-        text: '其他',
-        items: [
-          { text: '友情链接', link: '/bookshop/friendslink/', icon: 'reco-friend' },
+          // { text: '老版博客', link: 'https://wuchuan99.github.io/docs//old-blog', icon: 'reco-document' },
         ]
       },
+      // {
+      //   text: '其他',
+      //   items: [
+      //     { text: '友情链接', link: '/bookshop/friendslink/', icon: 'reco-friend' },
+      //   ]
+      // },
     ]
   }
 ]
